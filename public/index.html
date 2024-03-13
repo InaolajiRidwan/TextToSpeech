@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Text To Speech Converter - flameTech</title>
+    <style>
+      .hero {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+      }
+      /* textarea {
+        width: 800px;
+        height: 250px;
+        outline: 0;
+        background-color: #403d84;
+        color: #fff;
+        border: 0;
+        padding: 20px;
+        border-radius: 10px;
+        resize: none;
+        margin-bottom: 30px;
+      }
+
+      textarea::placeholder {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body class="bg-blue-800">
+    <div class="hero">
+      <h1 class="text-white my-5 text-3xl font-extrabold text-center italic">
+        Text To Speech <span class="text-red-700">Converter</span>
+      </h1>
+      <textarea
+        id="txtArea"
+        class="lg:w-4/12 lg:h-48 md:w-9/12 md:h-48 outline-none h-32 w-64 rounded-lg bg-gray-500 text-white text-sm text-center placeholder:text-center placeholder:pt-4 resize-none"
+        placeholder="Write anything Here....."
+      >
+      </textarea>
+      <div class="flex justify-center gap-3 mt-7">
+        <select class="flex-1 h-10 w-60 text-black rounded-lg"></select>
+        <button
+          onclick="clickMe()"
+          class="text-white bg-red-800 w-20 rounded-lg"
+        >
+          Listen
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
